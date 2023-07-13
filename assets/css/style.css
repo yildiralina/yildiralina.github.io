@@ -607,6 +607,9 @@ section {
   line-height: 0;
   padding: 6px;
 }
+.portfolio .portfolio-wrap .portfolio-links-kaggle a {
+  border-radius: 5px;
+}
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #fff;
   background: #009cea;
