@@ -125,9 +125,26 @@ section {
   }
 
   .tab-content {
-    text-align: right;
+    text-align: center;
   }
 
+  .btn-view-article {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #009cea;
+  }
+
+  .btn-view-article:hover {
+    background: #008bd1;
+  }
+  
   @keyframes slide-down {
     0% { opacity: 0; }
     100% { opacity: 1;}
