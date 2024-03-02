@@ -53,26 +53,6 @@
               </thead>
               <tbody class="align-middle table-group-divider">
                 <tr>
-                  <th class="fw-normal" scope="row">2024-03-03</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
                   <th class="fw-normal" scope="row">2024-03-04</th>
                   <td></td>
                   <td></td>
@@ -1287,8 +1267,8 @@
     </div>
   </div>
   <h2 id="exercise-blueprint" class="fw-lighter h3 my-4">Exercise Blueprint</h2>
-  <p class="text-start">Prior to each workout, complete the Warm-Up.</p>
-  <div class="table-responsive">
+  <p class="text-start">Complete the <a href="#warm-up">Warm-Up</a> before each workout (<a href="#weight-workout-a">Weight Workout A</a>, <a href="#weight-workout-b">Weight Workout B</a>, and <a href="#cardio-workout">Cardio Workout</a>).</p>
+  <div id="warm-up" class="table-responsive">
     <table class="table table-hover">
       <caption class="caption-top text-start">
       Warm-Up
@@ -1372,7 +1352,7 @@
     </table>
   </div>
   <p class="text-start">Two days a week, alternate between the Weight Workout A and the Weight Workout B, resting for at least a day after each session.</p>
-  <div class="table-responsive">
+  <div id="weight-workout-a" class="table-responsive">
     <table class="table table-hover">
       <caption class="caption-top text-start">
       Weight Workout A
@@ -1386,12 +1366,6 @@
         </tr>
       </thead>
       <tbody class="align-middle table-group-divider text-nowrap">
-        <tr>
-          <th class="fw-normal" scope="row">Side Plank, core</th>
-          <td>3</td>
-          <td>30&ndash;60 sec</td>
-          <td>1 min</td>
-        </tr>
         <tr>
           <th class="fw-normal" scope="row">Single-Leg Barbell Straight-Leg Deadlift, glutes &amp; hamstrings</th>
           <td>3</td>
@@ -1416,6 +1390,12 @@
           <td>12</td>
           <td>1 min</td>
         </tr>
+                <tr>
+          <th class="fw-normal" scope="row">Side Plank, core</th>
+          <td>3</td>
+          <td>30&ndash;60 sec</td>
+          <td>1 min</td>
+        </tr>
       </tbody>
       <tfoot>
         <tr>
@@ -1425,7 +1405,7 @@
     </table>
   </div>
   <div class="table-responsive">
-    <table class="table table-hover">
+    <table id="weight-workout-b" class="table table-hover">
       <caption class="caption-top text-start">
       Weight Workout B
       </caption>
@@ -1438,12 +1418,6 @@
         </tr>
       </thead>
       <tbody class="align-middle table-group-divider text-nowrap">
-        <tr>
-          <th class="fw-normal" scope="row">Side Plank, core</th>
-          <td>3</td>
-          <td>30&ndash;60 sec</td>
-          <td>1 min</td>
-        </tr>
         <tr>
           <th class="fw-normal" scope="row">Dumbbell Bulgarian Split Squat, quadriceps</th>
           <td>3</td>
@@ -1468,6 +1442,12 @@
           <td>12</td>
           <td>1 min</td>
         </tr>
+                <tr>
+          <th class="fw-normal" scope="row">Side Plank, core</th>
+          <td>3</td>
+          <td>30&ndash;60 sec</td>
+          <td>1 min</td>
+        </tr>
       </tbody>
       <tfoot>
         <tr>
@@ -1477,7 +1457,7 @@
     </table>
   </div>
   <p class="text-start">Do the Cardio Workout immediately after the Weight Workout.</p>
-  <div class="table-responsive">
+  <div id="cardio-workout" class="table-responsive">
     <table class="table table-hover">
       <caption class="caption-top text-start">
       Cardio Workout
