@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Bank Loan Approval</title>
+</head>
+<body>
+    <h2>Enter Loan Application Details</h2>
+    <form action="{{ url_for('predict') }}" method="post">
+        Age: <input type="text" name="age"><br>
+        Experience: <input type="text" name="experience"><br>
+        Income: <input type="text" name="income"><br>
+        ZIP Code: <input type="text" name="zip_code"><br>
+        Family: <input type="text" name="family"><br>
+        CCAvg: <input type="text" name="cc_avg"><br>
+        Education: <select name="education">
+            <option value="1">Undergrad</option>
+            <option value="2">Graduate</option>
+            <option value="3">Advanced/Professional</option>
+        </select><br>
+        Mortgage: <input type="text" name="mortgage"><br>
+        Personal Loan: <select name="personal_loan">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+        Securities Account: <select name="securities_account">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+        CD Account: <select name="cd_account">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+        Online: <select name="online">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+        CreditCard: <select name="credit_card">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
