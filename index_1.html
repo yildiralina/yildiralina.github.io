@@ -5,11 +5,11 @@
 </head>
 <body>
     <h2>Enter Loan Application Details</h2>
-    <form action="{{ url_for('predict') }}" method="post">
+    <form action="" method="post">
         Age: <input type="text" name="age"><br>
         Experience: <input type="text" name="experience"><br>
         Income: <input type="text" name="income"><br>
-        ZIP Code: <input type="text" name="zip_code"><br>
+        ZIP Code: <input type="text" name="zip_code" placeholder="A1A 1A1" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" title="Please enter a valid Canadian postal code. Format: A1A 1A1"><br>
         Family: <input type="text" name="family"><br>
         CCAvg: <input type="text" name="cc_avg"><br>
         Education: <select name="education">
@@ -40,5 +40,13 @@
         </select><br>
         <input type="submit" value="Submit">
     </form>
+    
+    {% if prediction %}
+    <div id="result">
+        <h3>Prediction Result:</h3>
+        <p>The loan application was: <strong>{{ prediction }}</strong></p>
+        <a href="/">Try another application</a>
+    </div>
+    {% endif %}
 </body>
 </html>
